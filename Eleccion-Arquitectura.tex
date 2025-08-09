@@ -1,0 +1,107 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, top=2.4cm, bottom=2.4cm, left=2.4cm, right=2.4cm]{geometry}
+\usepackage{times} % Times New Roman
+\setlength{\parindent}{0pt}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[spanish]{babel}
+\usepackage{url}
+\usepackage{xurl}
+\usepackage{hyperref}
+
+
+\begin{document}
+
+\begin{center}
+    {\bfseries\uppercase{arquitectura ideal segun el tipo de app}} \\
+    {\itshape K.J Guzman Ramirez}\\
+    {\itshape 7690-21-2903 Universidad Mariano Galvez} \\
+    {\itshape Seminario de Tecnologias de Informacion} \\
+    {\itshape kguzmanr2@miumg.edu.gt} \\
+\end{center}
+
+\textbf{URL REPOSITORIO LA TEX: } \\
+https://github.com/KennetJRamirez/Foro-Seleccion-Arquitectura
+
+\vspace{1em}
+\noindent\textbf{Resumen}\\
+En el desarrollo , el elegir una arquitectura correcta es vital para definir el exito de un proyecto. Esta define la estructura, componentes y como sera la interaccion del sistema, afectando el rendimiento, mantenimiento y escalabilidad a largo plazo. Para esto es que se realizan preguntas clave sobre el software, usuarios finales, expectativas, recursos y como seria posible una integracion a sistemas ya existentes. En la actualidad existen variedad de opciones, monolitica, microservicios, cliente-servidor, capas, reactivas, nube, etc, cada una con sus ventajas como desventajas y retos. No hay una solucion definitiva, esta dependera del contecto, capacidades, recursos, presupuesto etc. Es importante siempre recordar que aunque la arquitectura pueda parecer una decision tecnica, sus efectos se mostraran en todo el ciclo de vida de un proyecto, por lo que importante que se defina desde las etapas iniciales para evitar tener problemas futuros, que impliquen en gastos innecesarios o retrasos que impliquen perdidas para la empresa.
+. \\
+
+\noindent\textbf{Palabras clave: } 
+
+\vspace{1em}
+\noindent\textbf{Desarrollo del tema} \\
+La actualidad en al cual nos encontramos, hace que cada avance que de la tecnologia nos dificulte aun mas la eleccion cuando se desea crear algun tipo de software. Y se debe de hacer enfasis por que es vital ya que de aca se determinara si tendra exito o no. Debido a que  aca se define la estructura, arquitectura, organizacion, componentes, interacciones, etc, lo cual viene a tener un impacto en el rendimiento y posible escalabilidad que tendra la aplicacion a futuro. Por lo que antes de empezar a tomar esta decision importante debemos de delimitar bien , usando algunas preguntas como:
+
+\begin{itemize}
+    \item{¿Cuales seran las funciones de mi software?}
+    \item{¿Quienes son mis usuarios y las expectativas a cumplir?}
+    \item{¿Requisitos de escalabilidad, rendimiento y seguridad?}
+    \item{¿Limitaciones de recursos?} 
+    \item{¿Se integrara a un sistema existente?}
+\end{itemize}
+
+\textbf{Opciones en la actualidad} \\
+Hoy en dia por suerte los desarrolladores tienen una mejor variedad de opciones que se pueden ser aptas para la creacion de software en base a las necesidades que se desean solventar.
+Cada una ofrece ventajas como posibles desventajas, por lo que es importantes conocer que nos brinda cada una de ellas, ya que no hay ninguna opcion que sea la unica buena de todas, ya que dependera de la situacion, contexto, recursos, etc. Por lo que entre las mas usadas a dia de hoy nos encontramos con:
+\begin{itemize}
+    \item\textbf{Arquitectura Monolitica:} Aca todo se encuentra en un mismo sitio. Facilidad y rapidez de desarrollo son las palabras que mejor la definen en proyectos pequeños. Por lo que no es recomendada si a futuro se desea escalar y mas aun si se necesita mas complejidad.
+    
+    \item \textbf{Arquitectura de Microservicios:} Aca todo lo que integra al sistema esta separado y de comunicacion independiente. Haciendo posible que si ocurre un error no implique que todo el sistema estara sin poder utilizar, ya que solo el area afectada sera la que no se encuentre disponible. Pero es dificil de controlar si se tiene un sistema demasiado complejo.
+    \item\textbf{Arquitectura Cliente-Servidor:} Aca somo su nombre lo indica , contamos con un cliente que hace peticiones a un recurso el cual el servidor debera responder para devolverle dicho recurso al cliente. Aca una de las ventajas es que el cliente no debe tener instalado nada y que todo ocurre del lado del servidor, como lo puede ser una actualizacion, la cual luego afectara a todos los clientes, puede ser algo bueno o malo, depende como se manejara.
+    \item\textbf{Arquitectura de Capas:} Aca se separa en 4 capas la representacion del sistema, siendo: modelo, vista, controlador, logica de negocio. Es muy util debido a que se tiene todo correctamente gestionado y los cambios son mas faciles de implementar, pero se vuelve demasiado complejo cuando el sistema crece a tal punto que empieza a ser compleja la comunicacion entre el mismo.
+    \item\textbf{Arquitectura Basada en Eventos:} Aca todo se manejara en base a los eventos que ocurran, cada componente va a reaccionar en base a lo que ocurra, sin tener que hacer llamadas directas, lo que permite un alto nivel de respuesta y capacidad de usuarios sin afectar el rendimiento, ya que asignara recursos en base a la cantidad de trafico que exista. Es usada mayormente en la actualidad, debido a la alta respuesta que ofrece a los usuarios que cada vez mas exigen todo en segundos. Pero es dificil de implementar, ademas de que se debe tener una buena cantidad de recursos debido a que es algo robusta y demandante.
+    \item\textbf{Arquitectura sin Servidor:} Aca simplemente con tener ya el sistema hecho, se busca un proveedor que brinde acceso a una plataforma, en la cual ya no hay que preocuparse de instalar, configurar o mantener el servidor. Ya que el proveedor toma estas tareas, pero asi como suena muy innovador y que facilita la vida, tiene un enorme problema, siendo este su alto costo si se tiene un uso muy alto, que pasa casi siempre desapercibido hasta que llega el momento del cobro, ademas de estar siempre requiriendo de la participacion del proveedor, en casos de caida, actualizaciones, seguridad, etc.
+\end{itemize}
+
+\textbf{Otras consideraciones}\\ 
+No basta solamente con conocer acerca de las opciones que hay disponibles, tambien es necesario en pensar en el comportamiento que tendra a largo plazo. Entre estos podemos hacer menciones a:
+\begin{itemize}
+    \item{Los equipos de desarrollo y su capacidad}
+    \item{Facilidad de darle mantenimiento y escalabilidad}
+    \item{Presupuesto y costos operativos}
+\end{itemize}
+
+\textbf{Importancia de una buena eleccion de arquitectura} \\
+Elegir un tipo o tipos de arquitectura es clave tal como se menciono al comienzo, ya que influye en el orden , exito, eficiencia y un desarrollo acorde a los objetivos de la empresa, siendo asi que si ya se elegio la arquitectura, los beneficios que tendremos despues de este paso , pueden ser:
+\begin{itemize}
+    \item{Guia que evita improvisar} 
+    \item{Adoptar tecnologias y herramientas estandarizadas: }
+     \item{Obtener un sistema que cumpla con las necesidades } 
+     \item{Cambios y escalabilidad sin romper nada} 
+     \item{Mejor comunicacion entre clientes y equipo de desarrollo } 
+     \item{Alinear necesidad contra lo que la tecnologia ofrece}
+\end{itemize}
+
+\noindent\textbf{Observaciones y comentarios} 
+\begin{itemize}
+    \item{No existe una arquitectura que sea la mejor , cada una de ellas tiene sus ventajas, desventajas, retos de implementar, etc. Todo depende de que se quiere lograr}
+    \item{Es normal que no se considere tan importante el elegir correctamente un tipo de arquitectura, pero a futuro obtiene o presentar muchos problemas muy complejos en cuanto vaya creciendo tanto la complejidad del sistema como el trafico del mismo.}
+\end{itemize}
+
+\noindent\textbf{Conclusiones} 
+\begin{itemize}
+    \item{Se llego a la conclusion de que es vital desde primeras etapas definir la cual se va a usar, ya que asi se evitan problemas a futuro como lo pueden ser el rendimiento, mantenimiento y escalabilidad.}
+    \item {Se llego a la conclusion de que es importante conocer las opciones existentes para poder llegar a desarrollar,pero lo es mas poder adecuarlas en base a lo que en realidad necesitamos cubrir, ya que asi se garantiza que la posible solucion sea efectiva, util y apegada a los objetivos.}
+\end{itemize}
+
+
+\begin{thebibliography}{9}
+
+\bibitem{Yokwejuste2023}
+Yokwejuste. (2023). \textit{Choosing the best architecture for your software}. Dev.to. Recuperado de \url{https://dev-to.translate.goog/yokwejuste/choosing-the-best-architecture-for-your-software-23h9?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc}
+
+\bibitem{Sandaruwandha2023}
+Sandaruwandha, R. (2023). \textit{Choosing the right software architecture: A guide to selecting the best fit for your project}. Medium. Recuperado de \url{https://ravindusandaruwandh-medium-com.translate.goog/choosing-the-right-software-architecture-a-guide-to-selecting-the-best-fit-for-your-project-ecdda7812fb1?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc}
+
+\bibitem{Cellenza2023}
+Cellenza. (2023). \textit{How to choose the best software architecture with architectural drivers}. Blog Cellenza. Recuperado de \url{https://blog-cellenza-com.translate.goog/en/methodology/software-craft/how-to-choose-the-best-software-architecture-with-architectural-drivers/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc}
+
+\bibitem{AppMaster2023}
+AppMaster. (2023). \textit{Cómo elegir la arquitectura de software}. Recuperado de \url{https://appmaster.io/es/blog/como-elegir-la-arquitectura-de-software}
+
+\end{thebibliography}
+
+
+
+\end{document}
